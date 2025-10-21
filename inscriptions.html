@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscription</title>
+  <link rel="stylesheet" href="./HomeStyle.css">
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <style>
+    .form{
+      width: 290px;
+      border-radius: 10px;
+      padding: 25px;
+      margin: 0 auto;
+    }
+
+    .form h2{
+      width: 220px;
+      font-family: sans-serif;
+      text-align: center;
+      color: #1f71b3;
+      font-size: 22px;
+      background-color: white;
+      border-radius: 10px;
+      margin: 5px 5px 5px 9px;
+      padding: 8px;
+    }
+
+    .form input{
+      width: 240px;
+      height: 35px;
+      background: transparent;
+      border-bottom: 1px solid #1f71b3;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      color: black;
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin-top: 30px;
+      font-family: sans-serif;
+    }
+
+    .form input:focus{
+      outline: none;
+    }
+
+    ::placeholder{
+      color: black;
+      font-family: Arial, serif;
+    }
+
+    .btnn{
+      width: 240px;
+      height: 40px;
+      background-color: #1f71b3;
+      border: none;
+      margin-top: 30px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+      transition: .4s ease;
+    }
+
+    .btnn:hover{
+      background: white;
+      color: #1f71b3;
+    }
+
+    .btnn a{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .form .link a {
+      text-decoration: none;
+      color: #1f71b3;
+    }
+    #requirements{
+      padding-left: 0;
+      margin-left: 30px;
+      margin-right: 20px;
+      font-size: 15px;
+    }
+    #requirements li{
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+  <form name="createAcc" class="form" action="/createAccount" method="post">
+    <h2>Sign Up Here</h2>
+    <input type="text" name="username" placeholder="Enter username">
+    <input type="password" name="password" placeholder="Enter password">
+    <br>
+    <ul id="requirements">
+      <li>At least 4 characters (letters and digits only)</li>
+      <li>At least one letter and one digit</li>
+    </ul>
+    <button type="submit" class="btnn">Create Account</button>
+  </form>
+  </div>
+</body>
+</html>

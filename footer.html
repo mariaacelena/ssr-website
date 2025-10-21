@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>footer</title>
+  <link rel="stylesheet" href="./HomeStyle.css">
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <style>
+
+    .disclaimer a {
+      color: white;
+    }
+    .disclaimer{
+      margin-top: 60px;
+    }
+    .icons{
+      margin: 0 auto;
+      text-align: center;
+    }
+    .icons h3{
+      margin-bottom: 30px;
+    }
+    span{
+      color: #1f71b3;
+    }
+
+    .navigate{
+      display: flex;
+      flex-direction: row;
+    }
+    .navigate ul{
+      padding: 0;
+      margin-right: 50px;
+      list-style: none;
+      text-decoration: none;
+    }
+    .navigate ul li{
+      padding-bottom: 10px;
+    }
+    .navigate ul li a{
+      text-decoration: none;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="footer">
+    <table class="logo">
+      <tr>
+        <td><h1>255 SSR</h1></td>
+        <td>
+          <a href="./home.html"><img style="height: 50px" src="./images/logo.png" alt=""></a>
+        </td>
+      </tr>
+    </table>
+
+    <div class="contact">
+      <h3>Contact</h3>
+      <p>820 rue Montarville, <br>Longueuil, QC, Canada</p>
+      <a href="tel:+254712345678">+(514) 553-7382</a>
+    </div>
+
+    <div class="icons">
+      <h3>Suivez-nous!</h3>
+      <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+
+      <div class="disclaimer">
+        <a href="#" onclick="disclaimerMess()">Privacy/Disclaimer Statement</a>
+      </div>
+    </div>
+    <br>
+
+    <div>
+      <h3>Navigation</h3>
+
+      <div class="navigate">
+        <ul>
+          <li><a href="./home.html">Accueil <span>></span></a></li>
+          <li><a href="./inscriptions.html">Inscriptions <span>></span></a></li>
+          <li><a href="apropos.html">À propos de nous</a></li>
+          <li><a href="./dogs.html">Annonces</a></li>
+          <li><a href="./contact.html">Contact <span>></span></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script>
+    function disclaimerMess(){
+      confirm("We value your privacy. Any personal information you share will never be sold or misused and is only used to improve our services.\n" +
+        "\n" +
+        "Content submitted by pet owners is their responsibility. We are not liable for any incorrect or misleading information provided by users.\n" +
+        "\n" +
+        "\n" +
+        "By using this site, you agree to these terms.");
+    }
+  </script>
+</body>
+</html>
