@@ -18,41 +18,88 @@ p{
 }
 
 /* HEADER */
-.header{
-  padding: 20px;
-  font-size: 18px;
+nav{
+  /*padding: 10px;*/
+  font-size: 16px;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 
 }
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
 
 /* MENU */
-.menu ul{
-  list-style-type: none;
-  text-align: right;
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.menu ul li{
-  padding: 5px;
-  border-bottom: 1px solid lightgrey;
-  border-right: none;
-  border-left: none;
-  font-size: 16px;
-
+nav ul li{
+  height: 50px;
+  /*padding: 5px;*/
+  /*border-bottom: 1px solid lightgrey;*/
+  /*border-right: none;*/
+  /*border-left: none;*/
+  /*font-size: 16px;*/
 }
-
-.menu ul li:hover{
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover{
   background-color: #790320;
 }
-.menu ul li:hover a{
+
+nav ul li:hover{
+  background-color: #790320;
+}
+nav ul li:hover a{
   color: white;
 }
 
-.menu ul li a{
-  text-decoration: none;
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+
+}
+.sidebar a{
+  width: 100%;
+}
+.sidebar a:hover{
+  background-color: #ffffff;
   color: black;
+}
+.menu-button{
+  display: none;
+  position: fixed;
+}
+.close-button{
+
 }
 
 .content{
@@ -161,19 +208,22 @@ span{
 
 
 /* MOBILE */
+@media (max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+
 @media (max-width: 600px) {
-  .menu, .content, .welcome, .annonces, .inscription, .boutique, .footer{
+  .content, .welcome, .annonces, .inscription, .boutique, .footer{
     width: 100%;
   }
   .footer{
     display: flow;
-    /*justify-content: space-between;*/
-    /*background-color: #777;*/
     padding-top: 20px;
-    /*padding-left: 20px;*/
-    /*padding-bottom: 20px;*/
-    /*color: white;*/
-    /*align-items: center;*/
   }
 }
 
