@@ -267,6 +267,11 @@ span{
   }
 }
 
+.loading{
+  width: 100%;
+  text-align: center;
+}
+
 @media (max-width: 600px) {
   .content, .welcome, .annonces, .inscription, .boutique, .footer{
     width: 100%;
