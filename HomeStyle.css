@@ -25,7 +25,7 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  transition: rigth 300ms ease-out;
+  /*transition: rigth 300ms ease-out;*/
 }
 nav{
   background-color: white;
@@ -75,7 +75,7 @@ nav ul li:hover a{
   right: 0;
   height: 100vh;
   width: 250px;
-  z-index: 999;
+  z-index: 100000;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0,0,0,0.1);
