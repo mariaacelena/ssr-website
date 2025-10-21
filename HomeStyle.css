@@ -25,11 +25,12 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  transition: rigth 300ms ease-out;
 }
 nav{
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+  z-index: 10;
 }
 
 /* MENU */
@@ -83,6 +84,9 @@ nav ul li:hover a{
   align-items: flex-start;
   justify-content: flex-start;
 }
+/*.sidebar ul{*/
+/*  width: 100%;*/
+/*}*/
 .sidebar li{
   width: 100%;
 
@@ -97,9 +101,17 @@ nav ul li:hover a{
 .menu-button{
   display: none;
   position: fixed;
+  cursor: pointer;
 }
 .close-button{
-
+  cursor: pointer;
+}
+#overlay{
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 8;
+  display: none;
 }
 
 .content{
