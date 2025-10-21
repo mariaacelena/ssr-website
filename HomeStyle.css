@@ -80,7 +80,7 @@ nav ul li:hover a{
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.84);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(0,0,0,0.1);
   display: none;
@@ -138,12 +138,18 @@ nav ul li:hover a{
   text-align: center;
   color: black;
 }
-.welcome button{
+#apropos-button{
   border: none;
   background-color: white;
   color: black;
   padding: 15px 32px;
   border-radius: 20px;
+  font-size: 14px;
+}
+#apropos-button:hover{
+  background-color: #aaa5a5;
+  color: black;
+  cursor: pointer;
 }
 
 /* ANNONCES */
@@ -157,6 +163,13 @@ nav ul li:hover a{
 .inscription{
   width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.inscription img{
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 #inscription-button{
   border: none;
@@ -164,7 +177,7 @@ nav ul li:hover a{
   color: white;
   padding: 15px 32px;
   border-radius: 20px;
-  display: flow;
+  font-size: 16px;
 }
 #inscription-button:hover{
   background-color: rgba(121, 3, 32, 0.83);
@@ -254,7 +267,8 @@ span{
   }
   .footer{
     display: flow;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
