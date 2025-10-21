@@ -7,25 +7,30 @@
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </head>
 <body>
-  <div class="header">
-    <table class="logo">
-      <tr>
-        <td><h1>255 Scout St-Rafqa</h1></td>
-        <td>
-          <a href="./home.html"><img style="height: 120px" src="./images/logo.png" alt=""></a>
-        </td>
-      </tr>
-    </table>
-  </div>
-  <div class="menu">
-    <ul>
-      <li><a href="./home.html">Accueil</a></li>
-      <li><a href="./inscriptions.html">Inscriptions</a></li>
-      <li><a href="./apropos.html">À propos de nous</a></li>
+
+  <nav>
+    <a id="logo" href="./index.html"><img style="height: 80px" src="./images/logo.png" alt=""></a>
+
+    <ul class="sidebar">
+      <li class="close-button" onclick=hideSidebar() aria-label="close sidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="./index.html">Accueil</a></li>
       <li><a href="./annonces.html">Annonces</a></li>
-      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./boutique.html">Boutique</a></li>
+      <li><a href="./inscriptions.html">Inscriptions</a></li>
+      <li><a href="./apropos.html">À Propos</a></li>
     </ul>
-  </div>
+
+    <ul>
+      <li class="hideOnMobile"><a href="./index.html">Accueil</a></li>
+      <li class="hideOnMobile"><a href="./annonces.html">Annonces</a></li>
+      <li class="hideOnMobile"><a href="./boutique.html">Boutique</a></li>
+      <li class="hideOnMobile"><a href="./inscriptions.html">Inscriptions</a></li>
+      <li class="hideOnMobile"><a href="./apropos.html">À Propos</a></li>
+      <li class="menu-button" onclick=showSidebar() aria-label="open sidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+
+  </nav>
+
 
   <script>
 
