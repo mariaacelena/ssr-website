@@ -39,7 +39,6 @@ nav{
 /* MENU */
 nav ul{
   width: 100%;
-  list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -47,33 +46,32 @@ nav ul{
 
 nav ul li{
   height: 50px;
+  list-style: none;
   /*padding: 5px;*/
   /*border-bottom: 1px solid lightgrey;*/
   /*border-right: none;*/
   /*border-left: none;*/
-  /*font-size: 16px;*/
+  /*font-size: 14px;*/
 }
-nav a{
+nav ul li a{
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
   display: flex;
   align-items: center;
   color: black;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
 }
-nav a:hover{
-  background-color: #790320;
+nav ul li a:hover{
+  color: #790320;
 }
 #logo:hover{
   background: white;
 }
-
-nav ul li:hover{
-  background-color: #790320;
-}
-nav ul li:hover a{
-  color: white;
-}
+/*nav ul li:hover a{*/
+/*  color: white;*/
+/*}*/
 
 .sidebar{
   position: fixed;
@@ -99,9 +97,10 @@ nav ul li:hover a{
 }
 .sidebar a{
   width: 100%;
+  transition: 0.18s ease-in-out;
 }
 .sidebar a:hover{
-  background-color: #ffffff;
+  background-color: #e3e2e2;
   color: black;
 }
 .menu-button{
@@ -153,6 +152,7 @@ nav ul li:hover a{
   padding: 15px 32px;
   border-radius: 20px;
   font-size: 14px;
+  transition: 0.18s ease-in-out;
 }
 #apropos-button:hover{
   background-color: #aaa5a5;
@@ -164,12 +164,11 @@ nav ul li:hover a{
 .annonces, .insta{
   width: 800px;
   margin: 0 auto;
-  align-items: center;
+  text-align: center;
 }
 .annonces h2 a{
   text-decoration: none;
   color: black;
-
 }
 .insta-posts{
   width: 800px;
@@ -198,6 +197,7 @@ nav ul li:hover a{
   padding: 15px 32px;
   border-radius: 25px;
   font-size: 16px;
+  transition: 0.18s ease-in-out;
 }
 #inscription-button:hover{
   background-color: rgba(121, 3, 32, 0.83);
@@ -232,6 +232,7 @@ nav ul li:hover a{
   height: 40px;
   margin-right: 5px;
   margin-left: 5px;
+  transition: 0.2s ease-in-out;
 }
 .footer ion-icon:hover{
   color: #790320;
