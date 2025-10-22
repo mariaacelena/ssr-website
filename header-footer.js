@@ -66,3 +66,16 @@ class SpecialFooter extends HTMLElement {
 
 customElements.define('special-header', SpecialHeader);
 window.customElements.define('special-footer', SpecialFooter);
+
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar');
+    const overlay = document.querySelector('#overlay');
+    sidebar.style.display = 'flex';
+    overlay.style.display = 'block';
+}
+function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar');
+    const overlay = document.querySelector('#overlay');
+    sidebar.style.display = 'none';
+    overlay.style.display = 'none';
+}
