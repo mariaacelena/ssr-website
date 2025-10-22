@@ -70,12 +70,12 @@ window.customElements.define('special-footer', SpecialFooter);
 function showSidebar(){
     const sidebar = document.querySelector('.sidebar');
     const overlay = document.querySelector('#overlay');
-    sidebar.style.display = 'flex';
+    sidebar.style.right = '0';
     overlay.style.display = 'block';
 }
 function hideSidebar(){
     const sidebar = document.querySelector('.sidebar');
     const overlay = document.querySelector('#overlay');
-    sidebar.style.display = 'none';
+    sidebar.style.right = '-100%';
     overlay.style.display = 'none';
 }
