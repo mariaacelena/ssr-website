@@ -216,16 +216,16 @@ nav ul li:hover a{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #777;
+  background-color: #C6985B;
   padding: 0 20px;
-  color: white;
+  color: #F3E8D5;
 }
 
 .footer .icons{
   margin-right: 5%;
 }
 .footer ion-icon{
-  color: white;
+  color: #F3E8D5;
   width: 40px;
   height: 40px;
   margin-right: 5px;
@@ -243,7 +243,7 @@ nav ul li:hover a{
 }
 .footer a{
   text-decoration: none;
-  color: white;
+  color: #F3E8D5;
 }
 .contact .maps{
   color: #065187;
@@ -259,7 +259,7 @@ nav ul li:hover a{
 }
 .navigate ul li a{
   text-decoration: none;
-  color: white;
+  color: #F3E8D5;
 }
 span{
   color: #790320;
