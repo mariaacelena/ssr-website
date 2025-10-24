@@ -24,6 +24,7 @@ nav{
   z-index: 10;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 25px;
   font-size: 16px;
   color: white;
   display: flex;
@@ -31,7 +32,7 @@ nav{
   justify-content: space-between;
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-  /*transition: rigth 300ms ease-out;*/
+  /*transition: right 300ms ease-out;*/
 }
 
 /* MENU */
