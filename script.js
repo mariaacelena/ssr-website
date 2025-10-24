@@ -3,16 +3,7 @@ class SpecialHeader extends HTMLElement {
         this.innerHTML = `
         <nav>
             <a id="logo" href="./index.html"><img style="height: 80px" src="./images/logo.png" alt=""></a>
-
-            <ul class="sidebar">
-              <li class="close-button" onclick=hideSidebar() aria-label="close sidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-              <li><a href="./index.html">Accueil</a></li>
-              <li><a href="./annonces.html">Annonces</a></li>
-              <li><a href="./boutique.html">Boutique</a></li>
-              <li><a href="./inscriptions.html">Inscriptions</a></li>
-              <li><a href="./apropos.html">À Propos</a></li>
-            </ul>
-
+            
             <ul>
               <li class="hideOnMobile"><a href="./index.html">Accueil</a></li>
               <li class="hideOnMobile"><a href="./annonces.html">Annonces</a></li>
@@ -21,6 +12,15 @@ class SpecialHeader extends HTMLElement {
               <li class="hideOnMobile"><a href="./apropos.html">À Propos</a></li>
               <li class="menu-button" onclick=showSidebar() aria-label="open sidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
+            
+            <ul class="sidebar">
+                <li class="close-button" onclick=hideSidebar() aria-label="close sidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./annonces.html">Annonces</a></li>
+                <li><a href="./boutique.html">Boutique</a></li>
+                <li><a href="./inscriptions.html">Inscriptions</a></li>
+                <li><a href="./apropos.html">À Propos</a></li>
+         </ul>
         </nav>`
     }
 }
@@ -55,7 +55,7 @@ class SpecialFooter extends HTMLElement {
                     <li><a href="./annonces.html">Annonces<span>></span></a></li>
                     <li><a href="./boutique.html">Boutique<span>></span></a></li>
                     <li><a href="./inscriptions.html">Inscriptions <span>></span></a></li>
-                    <li><a href="./apropos.html">À propos de nous<span>></span></a></li>
+                    <li><a href="./apropos.html">À propos<span>></span></a></li>
             
                   </ul>
                 </div>
@@ -65,17 +65,20 @@ class SpecialFooter extends HTMLElement {
 }
 
 customElements.define('special-header', SpecialHeader);
-window.customElements.define('special-footer', SpecialFooter);
+customElements.define('special-footer', SpecialFooter);
+customElements.define('special-sidebar', Sidebar);
 
 function showSidebar(){
     const sidebar = document.querySelector('.sidebar');
     const overlay = document.querySelector('#overlay');
     sidebar.style.right = '0';
+    // sidebar.style.position = 'fixed';
     overlay.style.display = 'block';
 }
 function hideSidebar(){
     const sidebar = document.querySelector('.sidebar');
     const overlay = document.querySelector('#overlay');
     sidebar.style.right = '-100%';
+    // sidebar.style.position = 'fixed';
     overlay.style.display = 'none';
 }
