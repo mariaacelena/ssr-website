@@ -21,7 +21,6 @@ p{
 
 /* HEADER */
 nav{
-  /*z-index: 10;*/
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 25px;
@@ -107,13 +106,13 @@ nav ul li a:hover{
   background-color: rgba(255, 255, 255, 0.84);
 }
 #overlay{
-  /*background-color: red;*/
   height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9;
+  z-index: 5;
+  display: none;
 }
 
 .content{
