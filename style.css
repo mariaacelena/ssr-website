@@ -158,6 +158,8 @@ nav ul li a:hover{
   width: 800px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+  /*top: 100px;*/
 }
 .annonces h2 a{
   text-decoration: none;
