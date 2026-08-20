@@ -7,7 +7,7 @@ class SpecialHeader extends HTMLElement {
             <ul>
               <li class="hideOnMobile"><a href="./index.html">Accueil</a></li>
               <li class="hideOnMobile"><a href="./annonces.html">Annonces</a></li>
-              <li class="hideOnMobile"><a href="./boutique.html">Boutique</a></li>
+              <li class="hideOnMobile"><a href="https://www.zeffy.com/en-CA/ticketing/uniformes">Boutique</a></li>
               <li class="hideOnMobile"><a href="./inscriptions.html">Inscriptions</a></li>
               <li class="hideOnMobile"><a href="./apropos.html">À Propos</a></li>
               <li class="menu-button" onclick=showSidebar() aria-label="open sidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
@@ -17,7 +17,7 @@ class SpecialHeader extends HTMLElement {
                 <li class="close-button" onclick=hideSidebar() aria-label="close sidebar"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href="./index.html">Accueil</a></li>
                 <li><a href="./annonces.html">Annonces</a></li>
-                <li><a href="./boutique.html">Boutique</a></li>
+                <li><a href="https://www.zeffy.com/en-CA/ticketing/uniformes">Boutique</a></li>
                 <li><a href="./inscriptions.html">Inscriptions</a></li>
                 <li><a href="./apropos.html">À Propos</a></li>
          </ul>
@@ -40,7 +40,6 @@ class SpecialFooter extends HTMLElement {
                 <p><a href="tel:+1 5149455315">Tel: (514) 553-7382</a><br>
                   <a href="mailto: 255esainte.rafqa@gmail.com">255esainte.rafqa@gmail.com</a></p>
               </div>
-            
               <div class="icons">
                 <h3>Suivez-nous!</h3>
                 <a href="https://www.facebook.com/profile.php?id=100068390004789"><ion-icon name="logo-facebook"></ion-icon></a>

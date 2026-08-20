@@ -1,5 +1,6 @@
 /*
   burgundy: #790320
+  beige: #E2C59D
 */
 
 
@@ -241,16 +242,16 @@ nav ul li a:hover{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #C6985B;
+  background-color: #E2C59D;
   padding: 0 20px;
-  color: #F3E8D5;
+  color: #f1f1f1;
 }
 
 .footer .icons{
   margin-right: 5%;
 }
 .footer ion-icon{
-  color: #F3E8D5;
+  color: #f1f1f1;
   width: 40px;
   height: 40px;
   margin-right: 5px;
@@ -269,7 +270,7 @@ nav ul li a:hover{
 }
 .footer a{
   text-decoration: none;
-  color: #F3E8D5;
+  color: #f1f1f1;
 }
 .contact .maps{
   color: #065187;
@@ -285,7 +286,12 @@ nav ul li a:hover{
 }
 .navigate ul li a{
   text-decoration: none;
-  color: #F3E8D5;
+  color: #f1f1f1;
+  transition: 0.1s ease-in-out
+}
+.navigate ul li a:hover{
+  text-decoration: none;
+  color: #790320;
 }
 
 .loading{
