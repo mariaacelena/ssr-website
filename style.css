@@ -177,7 +177,7 @@ nav ul li a:hover{
 
 /* INSCRIPTIONS */
 .inscription{
-  width: 800px;
+  width: 600px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -286,9 +286,6 @@ nav ul li a:hover{
 .navigate ul li a{
   text-decoration: none;
   color: #F3E8D5;
-}
-span{
-  color: #790320;
 }
 
 .loading{

@@ -32,9 +32,9 @@ class SpecialFooter extends HTMLElement {
 
               <div class="contact">
                 <h3>Adresse</h3>
-                <p>820 rue Montarville, <br>Longueuil, QC, Canada</p>
-                <a class="maps" href="https://www.google.com/maps/place/Paroisse+de+Sainte+Rafqa/@45.5287598,-73.502126,18z/data=!3m1!4b1!4m6!3m5!1s0x4cc91b46cea5c98b:0x246d97a857f6cd03!8m2!3d45.5287598!4d-73.502126!16s%2Fg%2F1tlmmynm?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D">Google Maps -></a><br>
-                <a class="maps" href="https://maps.apple.com/place?place-id=I492DCEAA79CCDB3C&address=869+Rue+Notre-Dame-De-Grâces%2C+Longueuil+QC+J4J+3E6%2C+Canada&coordinate=45.5285791%2C-73.502324&name=Paroisse+Ste+Rafqa&_provider=9902">Maps -></a><br>
+                <p>820 Rue Montarville, <br>Longueuil, QC, J4H 2M4</p>
+                <a class="maps" href="https://www.google.com/maps/place/Paroisse+de+Sainte+Rafqa/@45.5287598,-73.502126,18z/data=!3m1!4b1!4m6!3m5!1s0x4cc91b46cea5c98b:0x246d97a857f6cd03!8m2!3d45.5287598!4d-73.502126!16s%2Fg%2F1tlmmynm?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D">Google Maps</a><br>
+                <a class="maps" href="https://maps.apple.com/place?address=820+Rue+Montarville%2C+Longueuil+QC+J4H+2M4%2C+Canada&coordinate=45.529087%2C-73.501736&name=820+Rue+Montarville">Maps</a><br>
             
                 <h3>Contact</h3>
                 <p><a href="tel:+1 5149455315">Tel: (514) 553-7382</a><br>
@@ -51,11 +51,11 @@ class SpecialFooter extends HTMLElement {
                 <h3>Liens</h3>
                 <div class="navigate">
                   <ul>
-                    <li><a href="./index.html">Accueil <span>></span></a></li>
-                    <li><a href="./annonces.html">Annonces<span>></span></a></li>
-                    <li><a href="./boutique.html">Boutique<span>></span></a></li>
-                    <li><a href="./inscriptions.html">Inscriptions <span>></span></a></li>
-                    <li><a href="./apropos.html">À propos<span>></span></a></li>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="./annonces.html">Annonces</a></li>
+                    <li><a href="./boutique.html">Boutique</a></li>
+                    <li><a href="./inscriptions.html">Inscriptions</a></li>
+                    <li><a href="./apropos.html">À propos</a></li>
             
                   </ul>
                 </div>

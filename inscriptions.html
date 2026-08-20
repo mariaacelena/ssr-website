@@ -8,13 +8,37 @@
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   <style>
     .box-inscription{
-        
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         background-color: rgba(121, 3, 32, 0.93);
         border-radius: 20px;
-        padding: 20px 30px;
+        padding: 24px 28px;
         color: white;
         font-size: 18px;
-        width: 200px;
+        font-weight: 500;
+        width: 260px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        cursor: pointer;
+        box-shadow: 0 6px 16px rgba(121, 3, 32, 0.25);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .box-inscription:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 10px 22px rgba(121, 3, 32, 0.35);
+    }
+
+    .box-inscription ion-icon{
+        font-size: 20px;
+        transition: transform 0.2s ease;
+    }
+
+    .box-inscription:hover ion-icon{
+        transform: translateX(4px);
     }
   </style>
 </head>
@@ -26,11 +50,13 @@
         <p>
             Nouvelles
         </p>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
    </div>
     <div class="box-inscription" onclick="location.href='./re-inscription.html'">
         <p>
             Réinscriptions
         </p>
+        <ion-icon name="arrow-forward-outline"></ion-icon>
    </div>
 
    <br>
