@@ -52,7 +52,7 @@ class SpecialFooter extends HTMLElement {
                   <ul>
                     <li><a href="./index.html">Accueil</a></li>
                     <li><a href="./annonces.html">Annonces</a></li>
-                    <li><a href="./boutique.html">Boutique</a></li>
+                    <li><a href="https://www.zeffy.com/en-CA/ticketing/uniformes">Boutique</a></li>
                     <li><a href="./inscriptions.html">Inscriptions</a></li>
                     <li><a href="./apropos.html">À propos</a></li>
             

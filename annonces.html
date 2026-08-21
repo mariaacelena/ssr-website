@@ -5,24 +5,182 @@
   <title>Annonces</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   <style>
-    .div1{
-      position: relative;
-      overflow: hidden;
-      height:500px;
-      width:100%
-    }
-  </style>
+  .annonces-page {
+    padding: 32px 40px 48px;
+    font-family: 'Nunito', 'Segoe UI', sans-serif;
+  }
+ 
+  .annonces-header h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #3a2a1a;
+    margin: 0 0 4px;
+  }
+ 
+  .annonces-header p {
+    font-size: 14px;
+    color: #7d7566;
+    margin: 0 0 20px;
+  }
+ 
+  .annonces-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+ 
+  .annonce-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e1d6;
+    padding: 18px 20px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+ 
+  .annonce-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    background: #ece6d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+ 
+  .annonce-icon i {
+    font-size: 24px;
+    color: #b9ae94;
+  }
+ 
+  .annonce-content {
+    flex: 1;
+    min-width: 0;
+  }
+ 
+  .annonce-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 6px;
+  }
+ 
+  .tag-camp        { color: #5c6b2e; background: #eef2e0; }
+  .tag-reunion      { color: #8a5a12; background: #faf0dc; }
+  .tag-collecte     { color: #7a1f2b; background: #f6e8ea; }
+  .tag-evenement    { color: #7a1f2b; background: #f6e8ea; }
+  .tag-formation    { color: #2e5b6b; background: #e0eef2; }
+ 
+  .annonce-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3a2a1a;
+    margin: 8px 0 6px;
+  }
+ 
+  .annonce-desc {
+    font-size: 13px;
+    color: #7d7566;
+    line-height: 1.6;
+    margin: 0 0 10px;
+  }
+ 
+  .annonce-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 12px;
+    color: #a39c8c;
+  }
+ 
+  .annonce-meta i {
+    font-size: 13px;
+    vertical-align: -2px;
+    margin-right: 4px;
+  }
+
+   .annonce-btn {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #7a1f2b;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+ 
+  .annonce-btn:hover {
+    background: #611821;
+    cursor: pointer;
+  }
+ 
+  @media (max-width: 600px) {
+    .annonces-page { padding: 24px 20px 40px; }
+    .annonce-card { flex-direction: column; }
+  }
+</style>
 
 </head>
 <body>
   <special-header></special-header>
   <div id="overlay" onclick=hideSidebar() aria-hidden="true"></div>
 
-  <div class="div1" onclick="location.href='index.html'">
-    <p class="loading">EN CONSTRUCTION</p>
+  <section class="annonces-page">
+ 
+  <div class="annonces-header">
+    <h1>Annonces</h1>
+    <p>Les dernières nouvelles du groupe</p>
   </div>
+ 
+  <div class="annonces-list">
+ 
+    <!-- ===== Single announcement card (duplicate this block for each announcement) ===== -->
+    <article class="annonce-card">
+      <div class="annonce-icon">
+        <i class="ti ti-clipboard-check" aria-hidden="true"></i>
+      </div>
+      <div class="annonce-content">
+        <span class="annonce-tag tag-camp">Gestion</span>
+        <h2 class="annonce-title">Inscriptions 2026-2027 Ouvertes!</h2>
+        <p class="annonce-desc">
+          Les inscriptions pour l'année 2026-2027 ont débuté! Vous êtes des nouveaux ou anciens scouts, référez-vous 
+          à la page "Inscriptions" pour trouver les formulaires et vous joindre à l'aventure! 
+        </p>
+        <a onclick="location.href='inscriptions.html'" class="annonce-btn">S'inscrire</a>
+      </div>
+    </article>
+ 
+    <article class="annonce-card">
+      <div class="annonce-icon">
+        <i class="ti ti-users" aria-hidden="true"></i>
+      </div>
+      <div class="annonce-content">
+        <span class="annonce-tag tag-reunion">Réunion</span>
+        <h2 class="annonce-title">Notre Première Réunion de l'Année</h2>
+        <p class="annonce-desc">
+          Les réunions scouts recommencent bientôt. On se retrouve le 18 septembre à 19h dans la salle de 
+          réception de l'église pour commencer l'année en beauté. On espère vous voir nombreux!
+        </p>
+        <div class="annonce-meta">
+          <span><i class="ti ti-calendar" aria-hidden="true"></i>Vend. 18 septembre</span>
+          <span><i class="ti ti-clock" aria-hidden="true"></i>19h00 – 21h00</span>
+          <span><i class="ti ti-map-pin" aria-hidden="true"></i>820 Rue Montarville</span>
+        </div>
+      </div>
+    </article>
+ 
+    <!-- ===== End single announcement card ===== -->
+ 
+  </div>
+</section>
 
   <special-footer></special-footer>
 

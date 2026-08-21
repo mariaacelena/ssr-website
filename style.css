@@ -220,6 +220,7 @@ nav ul li a:hover{
   flex-direction: row;
   justify-content: space-between;
 }
+
 .product{
   display: flex;
   flex-direction: column;
@@ -228,7 +229,15 @@ nav ul li a:hover{
   padding: 20px 30px;
   color: white;
   font-size: 18px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(121, 3, 32, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+.product:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(121, 3, 32, 0.3);
+}
+
 .product img{
   border-radius: 30px;
   width: 170px;
