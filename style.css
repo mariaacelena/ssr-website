@@ -175,6 +175,12 @@ nav ul li a:hover{
   flex-direction: row;
   justify-content: center;
 }
+.afficher-plus{
+  color: black;
+}
+.afficher-plus:hover{
+  cursor: pointer;
+}
 
 /* INSCRIPTIONS */
 .inscription{
