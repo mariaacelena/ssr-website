@@ -111,7 +111,7 @@
     max-width: 560px;
   }
  
-  /* ===== Flexible photo gallery ===== */
+   /* ===== Flexible photo gallery ===== */
   /* Add/remove .gallery-item elements freely — the grid reflows on its own. */
   .gallery {
     display: flex;
@@ -176,9 +176,13 @@
       line-height: 1.6;
     }
  
+    .gallery {
+      flex-direction: column;
+    }
+ 
     .gallery-item {
-      width: calc(50% - 5px);
-      height: 90px;
+      width: 100%;
+      height: 160px;
     }
   }
 </style>
@@ -250,8 +254,8 @@
         premiers badges et des premières nuits sous la tente.
       </p>
       <div class="gallery">
-        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
-        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <div class="gallery-item"><img src="./images/louveteaux.JPG" alt=""></div>
+        <div class="gallery-item"><img src="./images/louveteaux.jpeg" alt=""></div>
         <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
         <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
         <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
