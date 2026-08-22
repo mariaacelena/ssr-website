@@ -7,49 +7,282 @@
   <link rel="stylesheet" href="./style.css">
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   <style>
-    .div1{
-      position: relative;
-      overflow: hidden;
-      height:500px;
-      width:100%;
+  .apropos-page {
+    background: #f2efe9;
+    padding: 32px 40px 48px;
+    font-family: 'Nunito', 'Segoe UI', sans-serif;
+  }
+ 
+  .apropos-header h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #3a2a1a;
+    margin: 0 0 4px;
+  }
+ 
+  .apropos-header p {
+    font-size: 14px;
+    color: #7d7566;
+    margin: 0 0 20px;
+  }
+ 
+  /* ===== Tabs ===== */
+  .tabbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+ 
+  .tabbtn {
+    background: #ece6d8;
+    border: 2px solid transparent;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #4a3b22;
+    cursor: pointer;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+ 
+  .tabbtn:hover {
+    background: #e2dac8;
+  }
+ 
+  .tabbtn.active {
+    color: #7a1f2b;
+    background: #ffffff;
+    border: 2px solid #e5e1d6;
+  }
+ 
+  /* ===== Panels ===== */
+  .panel.hidden {
+    display: none;
+  }
+ 
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+ 
+  .tag-groupe       { background: #f6e8ea; color: #7a1f2b; }
+  .tag-castors      { background: #e0eef2; color: #2e5b6b; }
+  .tag-louveteaux   { background: #eef2e0; color: #5c6b2e; }
+  .tag-aventuriers  { background: #faf0dc; color: #8a5a12; }
+  .tag-routiers     { background: #f6e8ea; color: #7a1f2b; }
+ 
+  .ptitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: #3a2a1a;
+    margin: 0 0 10px;
+  }
+ 
+  .pdesc {
+    font-size: 14px;
+    color: #7d7566;
+    line-height: 1.7;
+    margin: 0 0 20px;
+    max-width: 560px;
+  }
+ 
+  /* ===== Flexible photo gallery ===== */
+  /* Add/remove .gallery-item elements freely — the grid reflows on its own. */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+ 
+  .gallery-item {
+    background: #ece6d8;
+    border-radius: 10px;
+    width: 130px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b9ae94;
+    font-size: 22px;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+ 
+  /* When a real photo is dropped in, e.g. <div class="gallery-item"><img src="..."></div> */
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+  /* ===== Mobile ===== */
+  @media (max-width: 600px) {
+    .apropos-page {
+      padding: 20px 18px 32px;
     }
-  </style>
+ 
+    .apropos-header h1 {
+      font-size: 19px;
+    }
+ 
+    .apropos-header p {
+      font-size: 13px;
+    }
+ 
+    .tabbtn {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+ 
+    .ptitle {
+      font-size: 17px;
+    }
+ 
+    .pdesc {
+      font-size: 13px;
+      line-height: 1.6;
+    }
+ 
+    .gallery-item {
+      width: calc(50% - 5px);
+      height: 90px;
+    }
+  }
+</style>
 
 </head>
 <body>
   <special-header></special-header>
   <div id="overlay" onclick=hideSidebar() aria-hidden="true"></div>
 
-  <div class="div1" onclick="location.href='index.html'">
-    <p class="loading">EN CONSTRUCTION</p>
+  <section class="apropos-page">
+ 
+  <div class="apropos-header">
+    <h1>À Propos</h1>
+    <p>Découvrez les unités de notre groupe scout</p>
   </div>
-  <!--
-    <div class="section">
-      <div class="container">
-        <div class="content-section">
-          <div class="title">
-            <h1>About Us</h1>
-          </div>
-          <div class="content">
-            <h3></h3>
-            <p>
-              Paragraph here
-            </p>
-
-          </div>
-        </div>
-        <div class="social">
-          <a href="https://www.facebook.com/profile.php?id=100068390004789"><ion-icon name="logo-facebook"></ion-icon></a>
-          <a href="https://www.instagram.com/255ssr/"><ion-icon name="logo-instagram"></ion-icon></a>
-        </div>
+ 
+  <div class="tabbar" role="tablist" aria-label="Unités du groupe scout">
+    <button class="tabbtn active" data-tab="groupe" role="tab" aria-selected="true">Groupe</button>
+    <button class="tabbtn" data-tab="castors" role="tab" aria-selected="false">Castors</button>
+    <button class="tabbtn" data-tab="louveteaux" role="tab" aria-selected="false">Louveteaux</button>
+    <button class="tabbtn" data-tab="aventuriers" role="tab" aria-selected="false">Aventuriers</button>
+    <button class="tabbtn" data-tab="routiers" role="tab" aria-selected="false">Routiers</button>
+  </div>
+ 
+  <div class="panels">
+ 
+    <!-- Groupe -->
+    <div class="panel" id="panel-groupe" role="tabpanel">
+      <span class="tag tag-groupe">Le Groupe</span>
+      <h2 class="ptitle">Groupe Scout Sainte-Rafqa</h2>
+      <p class="pdesc">
+        Fondé pour offrir aux jeunes de 7 à 17 ans un espace d'apprentissage,
+        d'aventure et de fraternité. Notre groupe rassemble quatre unités
+        d'âge, chacune avec son propre programme, tout en partageant les
+        mêmes valeurs scoutes: respect, entraide et dépassement de soi.
+      </p>
+      <!-- Gallery: add or remove .gallery-item blocks freely, layout wraps automatically -->
+      <div class="gallery">
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
       </div>
-      <div class="image-section">
-        <img src="images/louveteaux.jpeg" alt="">
     </div>
-  </div> -->
+ 
+    <!-- Castors -->
+    <div class="panel hidden" id="panel-castors" role="tabpanel">
+      <span class="tag tag-castors">7-8 ans</span>
+      <h2 class="ptitle">Castors</h2>
+      <p class="pdesc">
+        Les plus jeunes de notre groupe découvrent le plein air à travers le
+        jeu, les bricolages et les petites explorations en nature. L'accent
+        est mis sur la curiosité, le partage et les premières amitiés scoutes.
+      </p>
+      <div class="gallery">
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+      </div>
+    </div>
+ 
+    <!-- Louveteaux -->
+    <div class="panel hidden" id="panel-louveteaux" role="tabpanel">
+      <span class="tag tag-louveteaux">9-11 ans</span>
+      <h2 class="ptitle">Louveteaux</h2>
+      <p class="pdesc">
+        À travers des jeux d'équipe, des sorties et des camps, les louveteaux
+        développent leur autonomie et leur esprit d'équipe. C'est l'âge des
+        premiers badges et des premières nuits sous la tente.
+      </p>
+      <div class="gallery">
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+      </div>
+    </div>
+ 
+    <!-- Aventuriers -->
+    <div class="panel hidden" id="panel-aventuriers" role="tabpanel">
+      <span class="tag tag-aventuriers">12-15 ans</span>
+      <h2 class="ptitle">Aventuriers</h2>
+      <p class="pdesc">
+        Les aventuriers relèvent des défis plus techniques: expéditions,
+        orientation, survie en forêt. Le programme encourage la prise
+        d'initiative et la planification en petits groupes.
+      </p>
+      <div class="gallery">
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+      </div>
+    </div>
+ 
+    <!-- Routiers -->
+    <div class="panel hidden" id="panel-routiers" role="tabpanel">
+      <span class="tag tag-routiers">16-20 ans</span>
+      <h2 class="ptitle">Routiers</h2>
+      <p class="pdesc">
+        La plus vieille unité se consacre au service communautaire et à de
+        grands projets menés par les jeunes eux-mêmes: voyages, collectes de
+        fonds et engagement bénévole, en préparation à la vie adulte.
+      </p>
+      <div class="gallery">
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+        <div class="gallery-item"><i class="ti ti-photo" aria-hidden="true"></i></div>
+      </div>
+    </div>
+ 
+  </div>
+</section>
 
   <special-footer></special-footer>
 
   <script src="./script.js"></script>
+  <script>
+  document.querySelectorAll('.tabbtn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.tabbtn').forEach(function (b) {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.panel').forEach(function (p) {
+        p.classList.add('hidden');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+      document.getElementById('panel-' + btn.dataset.tab).classList.remove('hidden');
+    });
+  });
+</script>
 </body>
 </html>
