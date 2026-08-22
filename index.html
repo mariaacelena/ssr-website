@@ -9,9 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <style>
-
-  </style>
 </head>
 <body>
   <special-header></special-header>
@@ -22,11 +19,14 @@
     <div class="welcome">
       <h1 style="font-size: 46px">Scouts <br>Sainte-Rafqa</h1>
       <p>Bienvenue au 255ᵉ Groupe Scout Sainte-Rafqa !
-        <br><br>Issu de la communauté libanaise et affilié à la Paroisse Sainte-Rafqa, notre groupe est avant tout une grande famille où chaque jeune peut grandir, s’épanouir et vivre pleinement l’esprit du scoutisme.
-        <br><br>Nous accueillons avec enthousiasme tous les jeunes dès l’âge de 7 ans, dans un environnement chaleureux, dynamique et rassembleur. À travers une foule d’activités, de sorties, de camps et de projets, nos jeunes développent leur autonomie, leur esprit d’équipe, leur leadership et leur sens des responsabilités, tout en créant des amitiés et des souvenirs qui les accompagneront longtemps.
-        <br><br>Au 255ᵉ, le scoutisme, c’est bien plus que des activités : c’est apprendre, découvrir, relever des défis, servir sa communauté et grandir ensemble.
-        <br><br>Prêt(e) à vivre l’aventure ? 
+        <br><br>Issu de la communauté libanaise et affilié à la Paroisse Sainte-Rafqa, notre groupe est une grande famille où chaque jeune grandit et vit pleinement l'esprit du scoutisme.
+        <br><br>Nous accueillons tous les jeunes dès 7 ans dans un environnement chaleureux et dynamique. À travers activités, sorties, camps et projets, nos jeunes développent leur autonomie, 
+        esprit d'équipe et leadership, tout en créant des amitiés durables.
+        <br><br>Au 255ᵉ, le scoutisme, c'est apprendre, découvrir, relever des défis et grandir ensemble.
+        <br><br>Prêt(e) à vivre l'aventure ? 
         <br><br>Rejoins la grande famille du 255ᵉ Scouts Sainte-Rafqa !
+
+
       </p>
       <br>
       <input id="apropos-button" type="button" value="Savoir plus" onclick="location.href='apropos.html'">
@@ -57,33 +57,34 @@
     <div class="boutique">
       <h2 style="font-size: 30px"><a href="https://www.zeffy.com/en-CA/ticketing/uniformes">Boutique</a></h2>
       <div class="products">
-
         <div class="product" onclick="window.open('https://www.zeffy.com/en-CA/ticketing/uniformes', '_blank')">
-          <img src="./images/kit-castor.jpg" alt="">
-
-          <br>
-          <label>
-            Kit Castors <br>
-            79.20$
-          </label>
+          <div class="product-image">
+            <img src="./images/kit-castor.jpg" alt="">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Kit Castors</p>
+            <p class="product-price">79.20$</p>
+          </div>
         </div>
 
         <div class="product" onclick="window.open('https://www.zeffy.com/en-CA/ticketing/uniformes', '_blank')">
-          <img src="./images/kit-louveteaux.jpg" alt="">
-          <br>
-          <label>
-            Kit Louveteaux <br>
-            64.70$
-          </label>
+          <div class="product-image">
+            <img src="./images/kit-louveteaux.jpg" alt="">
+          </div>
+          <div class="product-info">
+            <p class="product-name">Kit Louveteaux</p>
+            <p class="product-price">64.70$</p>
+          </div>
         </div>
 
         <div class="product" onclick="window.open('https://www.zeffy.com/en-CA/ticketing/uniformes', '_blank')">
-          <img src="./images/kit.png" alt="">
-          <br>
-          <label>
-            Kit Aventuriers <br>
-            72.70$
-          </label>
+          <div class="product-image">
+            <img src="./images/kit.png" alt="">
+          </div>  
+          <div class="product-info">
+            <p class="product-name">Kit Éclaireurs</p>
+            <p class="product-price">72.70$</p>
+          </div>
         </div>
 
       </div>
