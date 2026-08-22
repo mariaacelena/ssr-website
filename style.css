@@ -7,7 +7,7 @@
 *{
   box-sizing: border-box;
   /* font-family: "DM Serif Text", serif; */
-  font-family: 'Inter', 'Rasmus Andersson', serif ;
+  font-family: 'Inter', serif ;
 }
 
 
@@ -132,8 +132,6 @@ nav ul li a:hover{
   padding-bottom: 35px;
   text-align: center;
   color: #790320;
-  /*background: url("./images/louveteaux.JPG") center;*/
-  /*background-size: cover;*/
 }
 .welcome p{
   text-align: center;
