@@ -54,7 +54,7 @@ nav ul li a{
   display: flex;
   align-items: center;
   color: black;
-  font-weight: bold;
+  font-weight:550;
   transition: 0.2s ease-in-out;
 }
 nav ul li a:hover{
