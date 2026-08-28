@@ -42,8 +42,9 @@ class SpecialFooter extends HTMLElement {
               </div>
               <div class="icons">
                 <h3>Suivez-nous!</h3>
-                <a href="https://www.facebook.com/profile.php?id=100068390004789"><ion-icon name="logo-facebook"></ion-icon></a>
                 <a href="https://www.instagram.com/255ssr/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <!--<a href="https://www.facebook.com/profile.php?id=100068390004789"><ion-icon name="logo-facebook"></ion-icon></a>-->
+                <!--<a href="https://www.facebook.com/profile.php?id=100068390004789"><ion-icon name="logo-whatsapp"></ion-icon></a>-->
               </div>
             
               <div>
